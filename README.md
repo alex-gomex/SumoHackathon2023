@@ -8,4 +8,4 @@ This was a full-marks solution to the final and hardest question, which won the 
 
 Done in Year 2 Semester 1
 
-Alex Gomez
+_Alex Gomez_
