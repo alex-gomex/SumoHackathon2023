@@ -7,4 +7,5 @@ Involves using the matplotlib libraries in combination with a breadth-first sear
 This was a full-marks solution to the final and hardest question, which won the hackathon.
 
 Done in Year 2 Semester 1
--- Alex Gomez
+
+Alex Gomez
