@@ -1,7 +1,7 @@
 # Sumo Hackathon (2023) Question 3
 **Group: Crunch Time (Overall Winners)**
 
-<img src="BestPath.gif" width="50%" height="50%"/> <img src="Exploration.gif" width="50%" height="50%"/>
+<img src="BestPath.gif" width="49%" height="49%"/> <img src="Exploration.gif" width="49%" height="49%"/>
 
 Perfect final question solution to Sydney Uni Mechantronics Organisation Annual Hackathon (2023). 
 Involves using the matplotlib libraries in combination with a breadth-first search algorithm to find and visually render both the fastest and the "realistic" solution to a maze as based on the Maze Runner movies. 
