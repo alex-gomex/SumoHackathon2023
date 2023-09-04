@@ -174,6 +174,10 @@ def animateExploration(i):
 if flag:
     plt.scatter(xWalls,yWalls,c="#000000",marker="s")
     bestPathPlot = FuncAnimation(fig, animateBestPath, init_func=init,frames=len(xBestMoves), interval=1000, blit=True)
+    plt.title("Best Maze Path")
+    ax.set_aspect('equal', adjustable='box')
+    ax.set_axis_off()
+    plt.tight_layout()
     bestPathPlot.save('BestPath.gif',writer=PillowWriter(fps=60),dpi=100)
     plt.close()
 
@@ -185,5 +189,9 @@ if flag:
 # You could sort of think about this as him going out every day, mapping the closest unexplored tile, then coming home, and repeating. (That's how it works in the movies)
 # The resulting GIF is several minutes long so it takes a while to render
 explorationPlot = FuncAnimation(fig, animateExploration, init_func=init,frames=len(xExploration), interval=1, blit=True)
+plt.title("Maze Runner Exploration")
+ax.set_aspect('equal', adjustable='box')
+ax.set_axis_off()
+plt.tight_layout()
 explorationPlot.save('Exploration.gif',writer=PillowWriter(fps=60),dpi=100)
 plt.close()
