@@ -8,7 +8,7 @@ for i in range(31):
     for j in range(31):
         if i==0 or i==30 or j==0 or j==30: maze[i][j] = 1 # Set border of maze = 1
 
-lines = open("maze.txt","r").read().split("\n") # Split text file into line-by-line array
+lines = open("Specifications/maze.txt","r").read().split("\n") # Split text file into line-by-line array
 
 for i in range(1,len(lines)): # Skip the first line - first line will be csv header
 
@@ -69,7 +69,7 @@ if flag: # He only leaves the maze if he finds an exit
     xBestMoves, yBestMoves = [15], [15] # We must make a list of coordinates that detail the best possible path (for part 4)
     previousMove = 0 # Variable to hold what the previous move was
     directionLines = [] # This will hold the directions we use for the txt file
-    f = open("directions.txt", "w") # Open the file to write directions
+    f = open("Output/directions.txt", "w") # Open the file to write directions 
     for move in currentPath: # The final path (best solution)   
         if move == 1: # Move up
             xBestMoves.append(xBestMoves[-1])
@@ -176,7 +176,7 @@ if flag:
     plt.title("Hackathon Q3 2023 (Breadth-First Search)")
     bestPathPlot = FuncAnimation(fig, animateBestPath, init_func=init,frames=len(xBestMoves), interval=1000, blit=True)
     plt.tight_layout()
-    bestPathPlot.save('BestPath.gif',writer=PillowWriter(fps=60),dpi=100)
+    bestPathPlot.save('Output/BestPath.gif',writer=PillowWriter(fps=60),dpi=100)
     plt.close()
 
 
@@ -190,5 +190,5 @@ plt.scatter(xWalls,yWalls,c="#000000",marker="s")
 explorationPlot = FuncAnimation(fig, animateExploration, init_func=init,frames=len(xExploration), interval=1, blit=True)
 plt.title("Hackathon Q3 2023 (Breadth-First Search)")
 plt.tight_layout()
-explorationPlot.save('Exploration.gif',writer=PillowWriter(fps=60),dpi=100)
+explorationPlot.save('Output/Exploration.gif',writer=PillowWriter(fps=60),dpi=100)
 plt.close()
