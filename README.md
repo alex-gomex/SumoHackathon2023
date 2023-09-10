@@ -11,4 +11,4 @@ Main code in "MazeRunner.py". Hackathon Brief and Maze Input in "Specifications"
 
 Done in Year 2 Semester 1.
 
-_Alex Gomez_
+_Alex G_
